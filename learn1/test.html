@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang='ja'> 
+<head> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>My OpenLayers Map</title>    
+    <link rel='stylesheet' href='openlayers/css/ol.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <script type='text/javascript' src='openlayers/build/ol.js'></script>
+    <script type='text/javascript' src='js/test.js'></script>
+</head>
+
+<body>
+    <div id='map_canvas' style="width:50%;height:100%;float:left;"></div>
+    <div style="width:50%;float:right;">
+        <div id="outStr"></div>
+        <button id="drawLine">Draw line</button><br />
+        <button id="deleteLastPoint">Delete last point</button>
+        <div>
+            不透明度：
+            <a href="#" id="opacity01">0.1</a>&nbsp;
+            <a href="#" id="opacity05">0.5</a>&nbsp;
+            <a href="#" id="opacity10">1.0</a>
+        </div>
+        <div>
+            不透明度=+-0.2：
+            <a href="#" id="opacityMinus">&lt;&lt;</a>&nbsp;
+            <a href="#" id="opacityPlus">&gt;&gt;</a>
+        </div>
+        <button id="getLineData">Get points from textarea</button><br />
+        <div id="lineLength"><div>
+        <textarea cols="46" rows="45" id="latlng_display"></textarea>
+    </div>
+</body>
+
+</html>
+
